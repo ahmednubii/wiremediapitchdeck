@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advertise with AI.WIRE | Media Kit 2025</title>
+  <meta name="description" content="Reach 100K+ tech leaders, founders, and AI enthusiasts with AI.WIRE - one of the fastest-growing AI newsletters.">
+  <meta property="og:title" content="Advertise with AI.WIRE">
+  <meta property="og:description" content="Reach 100K+ tech leaders with one of the fastest-growing AI newsletters.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: linear-gradient(135deg, #0a0a0f 0%, #0d1117 50%, #0a0f14 100%);
+      color: #fff;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    /* Background Effects */
+    .bg-effects {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .bg-glow-1 {
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle at 30% 30%, rgba(0, 212, 170, 0.08) 0%, transparent 50%);
+      animation: pulse 8s ease-in-out infinite;
+    }
+
+    .bg-glow-2 {
+      position: absolute;
+      top: -50%;
+      right: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle at 70% 70%, rgba(99, 102, 241, 0.06) 0%, transparent 50%);
+      animation: pulse 10s ease-in-out infinite reverse;
+    }
+
+    .bg-grid {
+      position: absolute;
+      inset: 0;
+      background-image: 
+        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 0.5; transform: scale(1); }
+      50% { opacity: 0.8; transform: scale(1.1); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes gradient {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+      background: linear-gradient(to bottom, rgba(10,10,15,0.95) 0%, rgba(10,10,15,0.8) 50%, transparent 100%);
+      backdrop-filter: blur(10px);
+    }
+
+    .logo {
+      font-family: 'Space Mono', monospace;
+      font-size: 24px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-highlight {
+      background: linear-gradient(135deg, #00d4aa 0%, #00f5c4 100%);
+      padding: 2px 10px;
+      color: #0a0a0f;
+      margin-left: 4px;
+    }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      background: linear-gradient(135deg, #00d4aa 0%, #00c49a 100%);
+      color: #0a0a0f;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 100px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .nav-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(0, 212, 170, 0.3);
+    }
+
+    /* Sections */
+    section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 120px 40px 80px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .container {
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+    }
+
+    .hero-label {
+      font-size: 14px;
+      letter-spacing: 3px;
+      color: #00d4aa;
+      margin-bottom: 24px;
+      font-weight: 500;
+      animation: slideUp 0.6s ease forwards;
+    }
+
+    .hero h1 {
+      font-size: clamp(48px, 8vw, 96px);
+      font-weight: 700;
+      line-height: 1.05;
+      margin-bottom: 32px;
+      animation: slideUp 0.6s ease 0.1s forwards;
+      opacity: 0;
+    }
+
+    .hero h1 .dim {
+      color: rgba(255,255,255,0.4);
+    }
+
+    .hero h1 .gradient-text {
+      background: linear-gradient(135deg, #fff 0%, #00d4aa 50%, #00f5c4 100%);
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: gradient 4s ease infinite;
+    }
+
+    .hero-desc {
+      font-size: 20px;
+      color: rgba(255,255,255,0.6);
+      max-width: 600px;
+      margin: 0 auto 48px;
+      line-height: 1.7;
+      animation: slideUp 0.6s ease 0.2s forwards;
+      opacity: 0;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      animation: slideUp 0.6s ease 0.3s forwards;
+      opacity: 0;
+    }
+
+    .hero-stat {
+      padding: 12px 24px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 100px;
+      font-size: 14px;
+    }
+
+    .hero-stat strong {
+      color: #00d4aa;
+      font-weight: 700;
+      margin-right: 8px;
+    }
+
+    .hero-stat span {
+      color: rgba(255,255,255,0.6);
+    }
+
+    /* Section Headers */
+    .section-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .section-header h2 {
+      font-size: clamp(36px, 5vw, 56px);
+      font-weight: 700;
+    }
+
+    .section-header h2 .accent {
+      color: #00d4aa;
+    }
+
+    .section-header p {
+      color: rgba(255,255,255,0.5);
+      margin-top: 16px;
+      font-size: 18px;
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+
+    .stat-card {
+      background: linear-gradient(135deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 20px;
+      padding: 40px 32px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-4px) scale(1.02);
+      border-color: rgba(0, 212, 170, 0.4);
+    }
+
+    .stat-value {
+      font-size: 48px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #00d4aa 0%, #00f5c4 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 8px;
+    }
+
+    .stat-label {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .stat-sub {
+      font-size: 14px;
+      color: rgba(255,255,255,0.5);
+    }
+
+    .growth-banner {
+      margin-top: 48px;
+      padding: 32px;
+      background: rgba(0, 212, 170, 0.05);
+      border: 1px solid rgba(0, 212, 170, 0.15);
+      border-radius: 16px;
+      text-align: center;
+      font-size: 16px;
+      color: rgba(255,255,255,0.8);
+    }
+
+    /* Audience Grid */
+    .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .audience-card {
+      background: linear-gradient(135deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 20px;
+      padding: 32px;
+      transition: all 0.3s ease;
+    }
+
+    .audience-card:hover {
+      border-color: rgba(0, 212, 170, 0.3);
+    }
+
+    .audience-icon {
+      font-size: 40px;
+      margin-bottom: 16px;
+    }
+
+    .audience-title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: #00d4aa;
+    }
+
+    .audience-list {
+      list-style: none;
+    }
+
+    .audience-list li {
+      padding: 8px 0;
+      color: rgba(255,255,255,0.7);
+      font-size: 15px;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .audience-list li:last-child {
+      border-bottom: none;
+    }
+
+    /* Featured Grid */
+    .featured-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+    }
+
+    .featured-logo {
+      background: rgba(255,255,255,0.95);
+      border-radius: 12px;
+      padding: 24px 20px;
+      text-align: center;
+      color: #1a1a2e;
+      font-weight: 700;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+
+    .featured-logo:hover {
+      transform: scale(1.05);
+    }
+
+    /* Packages Grid */
+    .packages-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .package-card {
+      background: linear-gradient(135deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 20px;
+      padding: 32px 28px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .package-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(0, 212, 170, 0.5);
+      box-shadow: 0 20px 40px rgba(0, 212, 170, 0.15);
+    }
+
+    .package-card.highlight {
+      background: linear-gradient(135deg, rgba(0, 212, 170, 0.15) 0%, rgba(0, 212, 170, 0.05) 100%);
+      border: 1px solid rgba(0, 212, 170, 0.3);
+    }
+
+    .package-badge {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: #00d4aa;
+      color: #0a0a0f;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 100px;
+    }
+
+    .package-position {
+      font-size: 13px;
+      color: #00d4aa;
+      font-weight: 500;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .package-name {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .package-features {
+      list-style: none;
+    }
+
+    .package-features li {
+      padding: 10px 0;
+      color: rgba(255,255,255,0.7);
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .package-features li:last-child {
+      border-bottom: none;
+    }
+
+    .package-features .check {
+      color: #00d4aa;
+    }
+
+    /* Placement Section */
+    .placement-visual {
+      background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 24px;
+      padding: 48px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .placement-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .placement-slot {
+      border-radius: 12px;
+      padding: 32px;
+      text-align: center;
+    }
+
+    .placement-slot.primary {
+      background: rgba(0, 212, 170, 0.1);
+      border: 2px dashed rgba(0, 212, 170, 0.4);
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .placement-slot.secondary {
+      background: rgba(99, 102, 241, 0.1);
+      border: 2px dashed rgba(99, 102, 241, 0.3);
+    }
+
+    .placement-slot.tools {
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px dashed rgba(245, 158, 11, 0.3);
+      padding: 12px;
+      font-size: 13px;
+      color: #fbbf24;
+    }
+
+    .placement-slot-title {
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .placement-slot.primary .placement-slot-title {
+      color: #00d4aa;
+    }
+
+    .placement-slot.secondary .placement-slot-title {
+      color: #818cf8;
+    }
+
+    .placement-slot-desc {
+      font-size: 14px;
+      color: rgba(255,255,255,0.6);
+    }
+
+    .placement-content {
+      background: rgba(255,255,255,0.03);
+      border-radius: 12px;
+      padding: 24px;
+      text-align: left;
+    }
+
+    .placement-content-label {
+      font-size: 14px;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 12px;
+    }
+
+    .placeholder-line {
+      height: 8px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 4px;
+      margin-bottom: 8px;
+    }
+
+    .placeholder-line:nth-child(2) { width: 80%; background: rgba(255,255,255,0.08); }
+    .placeholder-line:nth-child(3) { width: 90%; background: rgba(255,255,255,0.06); }
+    .placeholder-line:nth-child(4) { width: 60%; background: rgba(255,255,255,0.04); margin-bottom: 0; }
+
+    /* CTA Section */
+    .cta-section {
+      text-align: center;
+    }
+
+    .cta-emoji {
+      font-size: 60px;
+      margin-bottom: 24px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .cta-section h2 {
+      font-size: clamp(40px, 6vw, 64px);
+      font-weight: 700;
+      margin-bottom: 24px;
+      line-height: 1.1;
+    }
+
+    .cta-section h2 .gradient-text {
+      background: linear-gradient(135deg, #00d4aa 0%, #00f5c4 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .cta-desc {
+      font-size: 18px;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 48px;
+      line-height: 1.7;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 20px 48px;
+      background: linear-gradient(135deg, #00d4aa 0%, #00c49a 100%);
+      color: #0a0a0f;
+      font-size: 18px;
+      font-weight: 700;
+      border-radius: 100px;
+      text-decoration: none;
+      box-shadow: 0 10px 30px rgba(0, 212, 170, 0.2);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .cta-button:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(0, 212, 170, 0.3);
+    }
+
+    .cta-button .arrow {
+      font-size: 20px;
+    }
+
+    .contact-info {
+      margin-top: 64px;
+      display: flex;
+      justify-content: center;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+
+    .contact-item label {
+      display: block;
+      font-size: 13px;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .contact-item a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 15px;
+      transition: color 0.3s ease;
+    }
+
+    .contact-item a:hover {
+      color: #00d4aa;
+    }
+
+    /* Footer */
+    footer {
+      padding: 40px;
+      text-align: center;
+      color: rgba(255,255,255,0.3);
+      font-size: 14px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav {
+        padding: 16px 20px;
+      }
+
+      .logo {
+        font-size: 20px;
+      }
+
+      .nav-cta {
+        padding: 10px 16px;
+        font-size: 13px;
+      }
+
+      section {
+        padding: 100px 20px 60px;
+      }
+
+      .hero h1 {
+        font-size: clamp(36px, 10vw, 64px);
+      }
+
+      .hero-desc {
+        font-size: 16px;
+      }
+
+      .hero-stats {
+        gap: 12px;
+      }
+
+      .hero-stat {
+        padding: 10px 16px;
+        font-size: 13px;
+      }
+
+      .stat-value {
+        font-size: 36px;
+      }
+
+      .placement-visual {
+        padding: 24px;
+      }
+
+      .contact-info {
+        gap: 32px;
+      }
+
+      .cta-button {
+        padding: 16px 32px;
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Effects -->
+  <div class="bg-effects">
+    <div class="bg-glow-1"></div>
+    <div class="bg-glow-2"></div>
+    <div class="bg-grid"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">
+      <span>AI</span>
+      <span class="logo-highlight">.WIRE</span>
+    </div>
+    <a href="https://calendly.com/khaled-thewiremedia/20min?back=1" target="_blank" rel="noopener noreferrer" class="nav-cta">
+      Book Ad Slot <span>→</span>
+    </a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container hero">
+      <div class="hero-label">MEDIA KIT 2025</div>
+      <h1>
+        <span class="dim">Advertise with</span>
+        <br>
+        <span class="gradient-text">AI.WIRE</span>
+      </h1>
+      <p class="hero-desc">
+        Reach 100K+ tech leaders, founders, and AI enthusiasts with one of the fastest-growing AI newsletters.
+      </p>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <strong>100K+</strong>
+          <span>Subscribers</span>
+        </div>
+        <div class="hero-stat">
+          <strong>40%+</strong>
+          <span>Open Rate</span>
+        </div>
+        <div class="hero-stat">
+          <strong>2.5%</strong>
+          <span>Click Rate</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section id="stats">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why <span class="accent">AI.WIRE</span>?</h2>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-value">102K+</div>
+          <div class="stat-label">Active Subscribers</div>
+          <div class="stat-sub">Growing 10K+ weekly</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">40%+</div>
+          <div class="stat-label">Open Rate</div>
+          <div class="stat-sub">Industry avg: 21%</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">2.5%</div>
+          <div class="stat-label">Click Rate</div>
+          <div class="stat-sub">Industry-leading engagement</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">98%</div>
+          <div class="stat-label">US-Based Readers</div>
+          <div class="stat-sub">Premium audience</div>
+        </div>
+      </div>
+      <div class="growth-banner">
+        📈 <strong>Explosive Growth:</strong> From 7K to 102K subscribers in just 5 months
+      </div>
+    </div>
+  </section>
+
+  <!-- Audience Section -->
+  <section id="audience">
+    <div class="container">
+      <div class="section-header">
+        <h2>Who Reads <span class="accent">AI.WIRE</span>?</h2>
+      </div>
+      <div class="audience-grid">
+        <div class="audience-card">
+          <div class="audience-icon">💼</div>
+          <div class="audience-title">Business Leaders</div>
+          <ul class="audience-list">
+            <li>Startup founders & CEOs</li>
+            <li>Venture capitalists & angels</li>
+            <li>Enterprise decision-makers</li>
+            <li>Small business owners</li>
+          </ul>
+        </div>
+        <div class="audience-card">
+          <div class="audience-icon">⚡</div>
+          <div class="audience-title">Tech Wizards</div>
+          <ul class="audience-list">
+            <li>Tech industry professionals</li>
+            <li>AI & emerging tech researchers</li>
+            <li>Software developers & engineers</li>
+          </ul>
+        </div>
+        <div class="audience-card">
+          <div class="audience-icon">📈</div>
+          <div class="audience-title">Growth Experts</div>
+          <ul class="audience-list">
+            <li>Marketers & product managers</li>
+            <li>Growth strategists</li>
+            <li>Tech journalists & analysts</li>
+          </ul>
+        </div>
+        <div class="audience-card">
+          <div class="audience-icon">🚀</div>
+          <div class="audience-title">Enthusiasts</div>
+          <ul class="audience-list">
+            <li>Tech-savvy consumers</li>
+            <li>Early adopters</li>
+            <li>AI curious professionals</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Section -->
+  <section id="featured">
+    <div class="container">
+      <div class="section-header">
+        <h2>As Featured On</h2>
+        <p>Trusted by leading publications</p>
+      </div>
+      <div class="featured-grid">
+        <div class="featured-logo">Business Insider</div>
+        <div class="featured-logo">Associated Press</div>
+        <div class="featured-logo">The Globe and Mail</div>
+        <div class="featured-logo">Digital Journal</div>
+        <div class="featured-logo">Barchart</div>
+        <div class="featured-logo">StreetInsider</div>
+        <div class="featured-logo">The Pilot</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packages Section -->
+  <section id="packages">
+    <div class="container">
+      <div class="section-header">
+        <h2>Sponsorship <span class="accent">Packages</span></h2>
+      </div>
+      <div class="packages-grid">
+        <div class="package-card">
+          <div class="package-position">Top of Email</div>
+          <div class="package-name">Primary Ad</div>
+          <ul class="package-features">
+            <li><span class="check">✓</span> Small banner image</li>
+            <li><span class="check">✓</span> 4 sentences copy</li>
+            <li><span class="check">✓</span> CTA button</li>
+            <li><span class="check">✓</span> Limited to 1/edition</li>
+          </ul>
+        </div>
+        <div class="package-card">
+          <div class="package-position">Mid Email</div>
+          <div class="package-name">Secondary Ad</div>
+          <ul class="package-features">
+            <li><span class="check">✓</span> 2 sentences or banner</li>
+            <li><span class="check">✓</span> CTA button included</li>
+            <li><span class="check">✓</span> Limited to 1/edition</li>
+          </ul>
+        </div>
+        <div class="package-card">
+          <div class="package-position">Bottom Section</div>
+          <div class="package-name">Tools Ad</div>
+          <ul class="package-features">
+            <li><span class="check">✓</span> 50 characters</li>
+            <li><span class="check">✓</span> One link included</li>
+            <li><span class="check">✓</span> AI Tools section</li>
+          </ul>
+        </div>
+        <div class="package-card highlight">
+          <div class="package-badge">POPULAR</div>
+          <div class="package-position">3 Editions</div>
+          <div class="package-name">Custom Package</div>
+          <ul class="package-features">
+            <li><span class="check">✓</span> Sponsored across 3 issues</li>
+            <li><span class="check">✓</span> Maximum brand exposure</li>
+            <li><span class="check">✓</span> Custom placement</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Placement Section -->
+  <section id="placement">
+    <div class="container">
+      <div class="section-header">
+        <h2>Ad <span class="accent">Placement</span></h2>
+        <p>Your ad appears alongside curated AI news, tools, and resources</p>
+      </div>
+      <div class="placement-visual">
+        <div class="placement-stack">
+          <div class="placement-slot primary">
+            <div class="placement-slot-title">📍 PRIMARY AD SLOT</div>
+            <div class="placement-slot-desc">Banner + 4 sentences + CTA</div>
+          </div>
+          <div class="placement-content">
+            <div class="placement-content-label">📰 AI NEWS & INSIGHTS</div>
+            <div class="placeholder-line"></div>
+            <div class="placeholder-line"></div>
+            <div class="placeholder-line"></div>
+            <div class="placeholder-line"></div>
+          </div>
+          <div class="placement-slot secondary">
+            <div class="placement-slot-title">📍 SECONDARY AD SLOT</div>
+            <div class="placement-slot-desc">2 sentences or banner + CTA</div>
+          </div>
+          <div class="placement-content">
+            <div class="placement-content-label">🛠️ AI TOOLS & RESOURCES</div>
+            <div class="placement-slot tools">
+              📍 TOOLS AD — Your tool listed here
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="cta">
+    <div class="container cta-section">
+      <div class="cta-emoji">🚀</div>
+      <h2>
+        Let's Get Your<br>
+        <span class="gradient-text">Brand Noticed</span>
+      </h2>
+      <p class="cta-desc">
+        Book a quick call to discuss how AI.WIRE can amplify your reach to 100K+ tech decision-makers.
+      </p>
+      <a href="https://calendly.com/khaled-thewiremedia/20min?back=1" target="_blank" rel="noopener noreferrer" class="cta-button">
+        Book Your Ad Slot
+        <span class="arrow">→</span>
+      </a>
+      <div class="contact-info">
+        <div class="contact-item">
+          <label>Website</label>
+          <a href="https://www.thewiremedia.com" target="_blank" rel="noopener noreferrer">www.thewiremedia.com</a>
+        </div>
+        <div class="contact-item">
+          <label>Email</label>
+          <a href="mailto:khaled@thewiremedia.com">khaled@thewiremedia.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 AI.WIRE by The Wire Media. All rights reserved.
+  </footer>
+
+</body>
+</html>
